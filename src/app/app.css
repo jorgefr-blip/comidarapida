@@ -1,0 +1,92 @@
+/* ===== RESET ===== */
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* ===== HERO CON FONDO ANIMADO ===== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #00ff2a,
+    #ff5722,
+    #0707ff,
+    #ff7043
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== BOTONES ===== */
+.btn-warning {
+  background-color: #ff5722;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e64a19;
+}
+
+/* ===== SECCIONES ===== */
+.about,
+.contact {
+  background-color: #f1f1f1;
+  padding: 80px 0;
+}
+
+#menu {
+  padding: 80px 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+
+
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
